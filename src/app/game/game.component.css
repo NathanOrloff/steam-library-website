@@ -1,0 +1,50 @@
+img {
+    width: 50%;
+    height: 25%;
+    
+    object-fit: contain;
+  
+}
+div {
+    background-color: #303030;
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+
+h3 {
+    color: #fafafa;
+}
+h5 {
+    color: #fafafa;
+}
+p {
+    color: #fafafa;
+}
+
+.center {
+    text-align: center;
+}
+
+.news {
+    padding-left: 20px;
+}
+.news-content {
+    padding-left: 50px;
+}
+
+.inner {
+    color: #fafafa;
+}
+hr {
+    color: #fafafa;
+}
+
+.container {
+    width: 1500px;
+    
+  }
+  
+  .container img {
+    max-height: 100%;
+    max-width: 100%;
+  }

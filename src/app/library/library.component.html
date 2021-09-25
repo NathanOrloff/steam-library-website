@@ -1,0 +1,54 @@
+
+<div class="row">
+    
+    
+        <div  *ngFor="let data of libraryData; let i = index">
+            <div *ngIf="i % 3 == 0" class="row">
+                <div class="col-md-4">
+                    <app-library-card [game]=[data] (gameSelected)="onSelectedGame($event)">
+                        <img src= "{{ data.img_logo_url }}">
+                        <br>
+                        <p>
+                            {{ data.name }}
+                            <br>
+                            Play Time: {{ data.playtime_forever }} hours
+                        </p>
+                    </app-library-card>
+                </div>
+                <div *ngIf="i + 1 < libraryData.length" class="col-md-4">
+                    <app-library-card [game]='[libraryData[i + 1]]' (gameSelected)="onSelectedGame($event)">
+                        <img src= "{{libraryData[i + 1].img_logo_url}}">
+                        <br>
+                        <p>
+                            {{libraryData[i + 1].name}} 
+                            <br>
+                            Play Time:  {{libraryData[i+1].playtime_forever}}  hours
+                        </p>
+                    </app-library-card>
+                </div>
+                <div *ngIf="i + 2 < libraryData.length" class="col-md-4">
+                    <app-library-card [game]='[libraryData[i + 2]]' (gameSelected)="onSelectedGame($event)">
+                        <img src= "{{libraryData[i + 2].img_logo_url}}">
+                        <br>
+                        <p>
+                            {{libraryData[i + 2].name}} 
+                            <br>
+                            Play Time:  {{libraryData[i+2].playtime_forever}}  hours
+                        </p>
+                    </app-library-card>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+            
+                
+                
+            
+            
+        
+    
+    
+</div>
+

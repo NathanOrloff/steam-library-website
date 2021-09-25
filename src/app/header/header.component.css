@@ -1,0 +1,30 @@
+div {
+    background-color: #303030;
+    overflow: hidden;
+    /* padding-left: 20px; */
+    text-align: center;
+}
+h3 {
+    color: #fafafa;
+}
+h5 {
+    color: #fafafa;
+}
+hr {
+    color: #fafafa;
+}
+
+button {
+    background-color: #1b1c1e; /* Green */
+    border: solid;
+    border-radius: 15px;
+    color: #fafafa;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  button:hover{
+    box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+  }

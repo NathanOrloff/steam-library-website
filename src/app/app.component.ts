@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'steam-lib-data';
+  loadedFeature = 'library';
+
+  onNavigate(feature){
+    this.loadedFeature = feature;
+    
+  }
+
+}
+
+

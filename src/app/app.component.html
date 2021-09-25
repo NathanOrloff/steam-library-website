@@ -1,0 +1,5 @@
+<div>
+    <app-header></app-header>
+    <app-library (selectedGame)="onNavigate($event)" *ngIf="loadedFeature === 'library'"></app-library>
+    <app-game (exit)="onNavigate($event)" *ngIf="loadedFeature !== 'library'" [thisGame]='loadedFeature'></app-game>
+</div>
